@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		var obj = {};
+		var arr = [1, 2, 3];
+		
+		// 01
+		console.log(arr instanceof Array);
+		console.log(obj instanceof Object);
+		// 02
+		console.log(Array.isArray(arr));
+		
+		// 数组操作
+		// 末尾追加元素
+		var r = arr.push('tt', 'dd');
+		console.log(r);
+		console.log(arr);
+		// 头部追加元素
+		r = arr.unshift('cc', 'oo');
+		console.log(r);
+		console.log(arr);
+		// 删除末尾元素
+		r = arr.pop();
+		console.log(r);
+		console.log(arr);
+		// 删除头部元素
+		r = arr.shift();
+		console.log(r);
+		console.log(arr);
+		
+		arr = [1500, 2000, 2500, 1800, 3500, 3000, 1200];
+		console.log(arr);
+		arr.reverse();
+		console.log(arr);
+		arr.sort();
+		console.log(arr);
+		
+		// sort默认按位比较
+		arr = [1, 17, 4, 9, 16, 8];
+		console.log(arr);
+		arr.sort();
+		console.log(arr);
+		arr.sort(function(a, b) {
+			// 升序
+			return a - b;
+			// 降序
+			return b - a;
+		});
+		console.log(arr);
+		
+		// 元素查找
+		arr = ['red', 'blue', 'green', 'blue', 'yellow', 'black'];
+		console.log(arr.indexOf('blue'));
+		console.log(arr.indexOf('blue', 2));
+		console.log(arr.indexOf('orange'));
+		console.log(arr.lastIndexOf('blue'));
+		
+		var no = 12;
+		var str = '12';
+		console.log(no == str);
+		console.log(no === str);
+		
+		// 数组转字符串
+		console.log(arr.toString());
+		console.log(arr.join());
+		console.log(arr.join('&'));
+		
+		// concat() 连接两个或多个数组，返回新数组，不影响原数组
+		// slice(begin, end) 数组截取获得，返回新数组，不影响原数组
+		// splice(begin, end) 数组截取删除，返回被删除项目的新数组，影响原数组
+		
+	</script>
+	<body>
+	</body>
+</html>

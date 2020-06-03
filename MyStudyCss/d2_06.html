@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 */
+        
+        ul li {
+            color: blue;
+        }
+        
+        ol li a {
+            color: green;
+            text-decoration: none;
+        }
+        
+        .nav li {
+            color: red;
+        }
+        
+        div>a {
+            color: orange;
+        }
+        
+        div>p>a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>O1</li>
+        <li>O2</li>
+        <li>O3</li>
+        <li><a href="#">04</a></li>
+    </ol>
+    <ul>
+        <li>U1</li>
+        <li>U2</li>
+        <li>U3</li>
+        <li>U4</li>
+    </ul>
+    <ul class="nav">
+        <li>U1_1</li>
+        <li>U1_2</li>
+        <li>U1_3</li>
+        <li>U1_4</li>
+    </ul>
+    <div>
+        <a href="#">The son node.</a>
+        <p>
+            <a href="#">The grandson node.</a>
+        </p>
+    </div>
+</body>
+
+</html>

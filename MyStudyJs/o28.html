@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		
+		var stu = {
+			name: 'Simon',
+			age: 26,
+			address: 'Beijing Haidian',
+			say: function() {
+				console.log("Say Hi!");
+			},
+			run: function() {
+				console.log("Begin Running...");
+			},
+		};
+		
+		// 遍历对象
+		for (var k in stu) {
+			console.log(k + "(" + typeof(stu[k]) + "): " + stu[k]);
+		};
+		
+	</script>
+	<body>
+	</body>
+</html>

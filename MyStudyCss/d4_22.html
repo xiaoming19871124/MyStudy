@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .main {
+            /* 父容器很多情况下不方便给高度，这种情况就会造成：当子元素全部浮动时，父元素无法适应子元素的存在，高度不会被撑开 */
+            /* 解决这个问题需要了解：清除浮动的概念 */
+            /* height: 200px; */
+            width: 1200px;
+            margin: 0px auto;
+            background-color: orange;
+        }
+        
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            float: left;
+            height: 200px;
+            border: 1px yellow solid;
+        }
+        
+        .footer {
+            height: 200px;
+            background-color: lightskyblue;
+        }
+        
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box1">B1</div>
+        <div class="box2">B2</div>
+        <div class="box3">B3</div>
+        <div class="box4">B4</div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+
+</html>

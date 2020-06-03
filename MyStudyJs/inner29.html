@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		// Find the char in a string which appeared times is max.
+		var str = 'aabbaaccbbddccccbbbb';
+		var container = {};
+		for (var i = 0; i < str.length; i++) {
+			var c = str.charAt(i);
+			if (container[c])
+				container[c]++;
+			else
+				container[c] = 1;
+		}
+		console.log(container);
+		
+		var key = '';
+		var maxTimes = 0;
+		for (var k in container) {
+			if (container[k] > maxTimes) {
+				key = k;
+				maxTimes = container[k];
+			}
+		}
+		console.log("Char \"" + key + "\" appeared in max " + maxTimes + " times.");
+		
+	</script>
+	<body>
+	</body>
+</html>

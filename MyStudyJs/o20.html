@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		// 常规new方式创建对象
+		var stu = {
+			name: 'Simon',
+			age: 26,
+			address: 'Beijing Haidian',
+			say: function() {
+				console.log("Say Hi!");
+			},
+			run: function() {
+				console.log("Begin Running...");
+			},
+		};
+		console.log(stu);
+		console.log(stu.name);
+		console.log(stu['age']);
+		console.log(stu['address']);
+		stu.say();
+		stu.run();
+		
+	</script>
+	<body>
+	</body>
+</html>

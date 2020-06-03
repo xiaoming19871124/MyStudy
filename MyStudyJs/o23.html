@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		// 通过构造函数创建对象（构造函数不需要return）
+		function star(uname, age, address) {
+			this.name = uname;
+			this.age = age;
+			this.address = address;
+			this.run = function(thing) {
+				console.log('run ' + thing);
+			}
+		};
+		
+		var s1 = new star('Peter', 22, 'American');
+		console.log(s1.name);
+		console.log(s1['age']);
+		s1.run('server');
+		console.log(typeof(s1));
+		
+	</script>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav a {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            color: white;
+            font-size: 700;
+        }
+        
+        .nav .tag1 {
+            background-image: url("img/tag_blue.png");
+        }
+        
+        .nav .tag1:hover {
+            background-image: url("img/tag_green.png");
+        }
+        
+        .nav .tag2 {
+            background-image: url("img/tag_purple.png");
+        }
+        
+        .nav .tag2:hover {
+            background-image: url("img/tag_orange.png");
+        }
+        
+        .layer {
+            /* 样式覆盖 */
+            color: wheat;
+            color: red;
+        }
+        
+        .inherit {
+            /* 样式继承，可一定程度上简化代码 */
+            color: orange;
+            font-size: 24px;
+            /* line-height: 24px/1.5; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="tag1">Prometheus</a>
+        <a href="#" class="tag2">Grafana</a>
+    </div>
+
+    <a class="layer" href="#">Layer</a>
+    <div class="inherit">
+        <p>Inerit_p</p>
+        <a href="#">Inherit_a</a>
+    </div>
+</body>
+
+</html>

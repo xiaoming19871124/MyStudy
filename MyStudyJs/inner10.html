@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		
+		var MyDate = {
+			getDateTimeCn: function() {
+				var weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sta'];
+				
+				var date = new Date();
+				var dateTimeStr = "";
+				dateTimeStr += date.getFullYear() + "年";
+				dateTimeStr += (date.getMonth() + 1) + "月";
+				dateTimeStr += date.getDate() + "日";
+				dateTimeStr += ' ';
+				dateTimeStr += date.getHours() + "时";
+				dateTimeStr += date.getMinutes() + "分";
+				dateTimeStr += date.getSeconds() + "秒";
+				return dateTimeStr;
+			},
+		};
+		console.log(MyDate.getDateTimeCn());
+		
+		// 获得毫秒数4种方式
+		var currDate = new Date();
+		console.log(currDate.valueOf());
+		console.log(currDate.getTime());
+		console.log(+new Date());
+		console.log(Date.now());
+		
+	</script>
+	<body>
+	</body>
+</html>

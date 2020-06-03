@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		
+		// 打印某个字符或字符串在指定字符串中出现的[位置]和[次数]
+		function findStr(string, str) {
+			var indexes = [];
+			// var string_lowerCase = string.toLowerCase();
+			var position = 0;
+			while ((position = string.indexOf(str, position)) != -1) {
+				indexes.push(position);
+				position ++;
+			}
+			console.log(indexes);
+			console.log("Appeared " + indexes.length + " times.");
+		};
+		
+		var str = 'JavaScript Project';
+		findStr(str, 'a');
+		
+		// console.log(str.length);
+		// var strObj = new String(str);
+		// console.log(strObj);
+		
+		// var n = 12;
+		// var s = '12';
+		// console.log(n !== s);
+		
+		console.log(str.charAt(5));
+		console.log(str.charCodeAt(5));
+		
+	</script>
+	<body>
+	</body>
+</html>

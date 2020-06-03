@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		var ret = getSum("Tomorrow", "Today", "Yestarday");
+		console.log(ret);
+		
+		// function内置伪数组arguments
+		function getSum() {
+			console.log(arguments);
+			for (var i = 0; i < arguments.length; i++) {
+				console.log(arguments[i]);
+			}
+		}
+	</script>
+	<body>
+	</body>
+</html>

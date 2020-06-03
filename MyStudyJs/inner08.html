@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		var MyMath = {
+			randomIntInclusive: function getRandomIntInclusive(min, max) {
+			  min = Math.ceil(min);
+			  max = Math.floor(max);
+			  return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值 
+			}
+		};
+		var number = MyMath.randomIntInclusive(1, 10);
+		console.log(number);
+		
+		// var uNumber = prompt('Input a number to guess: ');
+		// while(false /*true*/) {
+		// 	console.log("enter");
+			
+		// 	if (uNumber > number) {
+		// 		uNumber = prompt("Your answer is bigger, try again: ");
+		// 		continue;
+		// 	} else if (uNumber < number) {
+		// 		uNumber = prompt("Your answer is smaller, try again: ");
+		// 		continue;
+		// 	} else {
+		// 		alert("You are really handsome!");
+		// 		break;
+		// 	}
+		// }
+		
+	</script>
+	<body>
+	</body>
+</html>

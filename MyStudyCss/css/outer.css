@@ -1,0 +1,10 @@
+div {
+    /* 首行缩进：2em表示当前元素两个大小的距离 */
+    text-indent: 2em;
+    /* 行间距，即行高 */
+    line-height: 25px;
+}
+
+p {
+    color: red;
+}

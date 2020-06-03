@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		var balance = 200;
+		var promptContent = "Please select a number from the list below for what you want: \n" +
+			" 1. [Save]  2. [Take]  3. [Query]";
+		var cmd = 3; //prompt(promptContent);
+		if (cmd == 1) {
+			console.log("Save...");
+			var fond = prompt("Insert your cash into it:");
+			if (!isNaN(fond)) {
+				console.log("Your account balance have changed to add: " + fond);
+				
+				balance += (fond - 0);
+				console.log("Now your account balance is: " + balance);
+			}
+			
+		} else if (cmd == 2) {
+			console.log("Take...");
+			var fond = prompt("Input how much you want to take: ");
+			if (isNaN(fond)) {
+				console.log("Input is invaild.");
+				
+			} else if ((fond - 0) > balance) {
+				console.log("Your account have no enough to take, now you balance is: " + balance);
+				
+			} else {
+				console.log("Your account balance have changed to take: " + fond);
+				
+				balance -= (fond - 0);
+				console.log("Now your account balance is: " + balance);
+			}
+			
+		} else {
+			console.log("Query...");
+			console.log("Your current balance is: " + balance);
+		}
+		
+		
+	</script>
+	<body>
+	</body>
+</html>

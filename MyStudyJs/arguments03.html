@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		
+		var resArray = reverseArray(1, 2, 3);
+		console.log(resArray);
+		resArray = reverseArray('a', 'b', 'c', 'd');
+		console.log(resArray);
+		
+		function reverseArray() {
+			var array = new Array(arguments.length);
+			for (var i = 0; i < arguments.length; i++) {
+				array[arguments.length - i - 1] = arguments[i];
+			}
+			return array;
+		}
+		
+	</script>
+	<body>
+	</body>
+</html>

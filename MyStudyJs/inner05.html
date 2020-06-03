@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<script>
+		
+		var MyMath = {
+			max: function() {
+				var max = arguments[0];
+				for (var i = 0; i < arguments.length; i++) {
+					if (arguments[i] > max)
+						max = arguments[i];
+				}
+				return max;
+			},
+			min: function() {
+				var min = arguments[0];
+				for (var i = 0; i < arguments.length; i++) {
+					if (arguments[i] < min)
+						min = arguments[i];
+				}
+				return min;
+			},
+		};
+		
+		console.log(MyMath.max(38, 29, 87, 38, 57));
+		console.log(MyMath.min(38, 29, 87, 38, 57));
+		
+	</script>
+	<body>
+	</body>
+</html>
