@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0px auto;
+    background-color: orange;
+}
+
+.header {
+    height: 42px;
+    background-color: lightgray;
+    margin: 10px auto;
+}
+
+.logo {
+    float: left;
+    width: 130px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 120px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0px 10px;
+}
+
+.nav a {
+    /* background-color: orange; */
+    color: black;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 42px;
+    padding: 5px 10px;
+}
+
+.nav a:hover {
+    border-bottom: 2px solid cornflowerblue;
+    color: cornflowerblue;
+}
+
+.search {
+    float: left;
+    width: 360px;
+    height: 42px;
+    margin-left: 100px;
+    background-color: yellow;
+}
+
+.search .text {
+    float: left;
+    border: 1px solid #00a4ff;
+    border-right: 0px;
+    width: 307px;
+    height: 40px;
+    text-indent: 15px;
+    color: #bfbfbf;
+}
+
+.search .button {
+    float: left;
+    width: 52px;
+    height: 42px;
+    border: 1px solid #00a4ff;
+    background-image: url("../img/fa-search.png");
+}
