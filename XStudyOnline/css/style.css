@@ -331,6 +331,8 @@ li {
 
 .introduction .intro_title {
     height: 70px;
+    line-height: 70px;
+    text-align: center;
 }
 
 .introduction .intro_title h2 {
@@ -339,13 +341,25 @@ li {
     line-height: 70px;
 }
 
-.introduction .intro_title a {
+.introduction .intro_title .intro_more {
     float: right;
     font-size: 12px;
     text-decoration: none;
     color: #bcbcbd;
     line-height: 70px;
     margin-right: 30px;
+}
+
+.introduction .intro_title em a {
+    font-style: normal;
+    font-size: 12px;
+    text-decoration: none;
+    color: #bcbcbd;
+    margin-right: 30px;
+}
+
+.introduction .intro_title em a:hover {
+    color: #00a4ff;
 }
 
 .introduction .intro_content>img {
