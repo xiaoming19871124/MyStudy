@@ -325,6 +325,120 @@ li {
     color: #999999;
 }
 
+.introduction {
+    margin-top: 10px;
+}
+
+.introduction .intro_title {
+    height: 70px;
+}
+
+.introduction .intro_title h2 {
+    float: left;
+    font-size: 20px;
+    line-height: 70px;
+}
+
+.introduction .intro_title a {
+    float: right;
+    font-size: 12px;
+    text-decoration: none;
+    color: #bcbcbd;
+    line-height: 70px;
+    margin-right: 30px;
+}
+
+.introduction .intro_content>img {
+    float: left;
+    width: 228px;
+    height: 395px;
+}
+
+.introduction .intro_content .intro_main {
+    float: right;
+    width: 956px;
+    height: 395px;
+    /* background-color: #fff; */
+}
+
+.introduction .intro_content .intro_main>img {
+    width: 956px;
+    height: 100px;
+}
+
+.introduction .intro_content .intro_main ul {
+    margin-top: 19px;
+    width: 972px;
+    height: 272px;
+    /* background-color: lightpink; */
+}
+
+.introduction .intro_content .intro_main li {
+    float: left;
+    width: 228px;
+    height: 272px;
+    background-color: white;
+    margin-right: 15px;
+}
+
+.introduction .intro_content .intro_main li img {
+    width: 228px;
+}
+
+.introduction .intro_content .intro_main li div {
+    float: left;
+    padding: 25px;
+}
+
+.introduction .intro_content .intro_main li div p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.introduction .intro_content .intro_main li div p span {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+
+/* .introduction .intro_side {
+    display: inline-block;
+    width: 228px;
+    height: 395px;
+    background-color: #fff;
+}
+
+.introduction .intro_content {
+    display: inline-block;
+    width: 956px;
+    height: 395px;
+    background-color: #fff;
+    margin-left: 11px;
+}
+
+.introduction .intro_content img {
+    width: 956px;
+    height: 100px;
+}
+
+.introduction .intro_content .intro_items {
+    width: 956px;
+    height: 271px;
+    background-color: lightgreen;
+    margin-top: 24px;
+} */
+
+
+/* .introduction .intro_content ul {
+    display: inline-block;
+    width: 956px;
+    height: 271px;
+    background-color: green;
+} */
+
 .footer {
     padding-top: 30px;
     margin-top: 40px;
