@@ -352,10 +352,10 @@ li {
 
 .introduction .intro_title em a {
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     text-decoration: none;
     color: #bcbcbd;
-    margin-right: 30px;
+    margin: 0px 35px;
 }
 
 .introduction .intro_title em a:hover {
@@ -417,41 +417,217 @@ li {
     color: #999999;
 }
 
+.da {
+    margin-top: 20px;
+    height: 452px;
+    /* background-color: orange; */
+}
 
-/* .introduction .intro_side {
-    display: inline-block;
+.da .da_title {
+    /* background-color: yellow; */
+    height: 60px;
+    text-align: center;
+}
+
+.da .da_title h2 {
+    float: left;
+    line-height: 60px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.da .da_title>a {
+    float: right;
+    margin-right: 30px;
+    line-height: 60px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #494949;
+}
+
+.da .da_title em a {
+    font-size: 16px;
+    line-height: 60px;
+    font-style: normal;
+    text-decoration: none;
+    color: #494949;
+    margin: 0px 35px;
+}
+
+.da .da_title em a:hover {
+    color: #00a4ff;
+}
+
+.da .da_main {
+    height: 392px;
+    /* background-color: lightgreen; */
+}
+
+.da .da_main>img {
+    float: left;
+}
+
+.da .da_main .da_content {
+    float: right;
+    width: 957px;
+    height: 392px;
+    /* background-color: white; */
+}
+
+.da .da_main .da_content ul {
+    margin-top: 16px;
+    width: 972px;
+    height: 272px;
+    /* background-color: orange; */
+}
+
+.da .da_main .da_content ul li {
+    float: left;
     width: 228px;
-    height: 395px;
-    background-color: #fff;
+    height: 272px;
+    background-color: white;
+    margin-right: 15px;
 }
 
-.introduction .intro_content {
-    display: inline-block;
-    width: 956px;
-    height: 395px;
-    background-color: #fff;
-    margin-left: 11px;
+.da .da_main .da_content li img {
+    height: 157px;
+    width: 228px;
 }
 
-.introduction .intro_content img {
-    width: 956px;
-    height: 100px;
+.da .da_main .da_content li div {
+    float: left;
+    padding: 25px;
 }
 
-.introduction .intro_content .intro_items {
-    width: 956px;
+.da .da_main .da_content li div p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.da .da_main .da_content li div p span {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.me {
+    margin-top: 10px;
+    /* background-color: orange; */
+}
+
+.me .me_title {
+    /* background-color: yellow; */
+    height: 60px;
+    text-align: center;
+}
+
+.me .me_title h2 {
+    float: left;
+    line-height: 60px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.me .me_title>a {
+    float: right;
+    margin-right: 30px;
+    line-height: 60px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #494949;
+}
+
+.me .me_title em a {
+    font-size: 16px;
+    line-height: 60px;
+    font-style: normal;
+    text-decoration: none;
+    color: #494949;
+    margin: 0px 35px;
+}
+
+.me .me_title em a:hover {
+    color: #00a4ff;
+}
+
+.me ul {
+    width: 1215px;
     height: 271px;
-    background-color: lightgreen;
-    margin-top: 24px;
-} */
+}
 
-
-/* .introduction .intro_content ul {
-    display: inline-block;
-    width: 956px;
+.me ul li {
+    /* 229 271 */
+    float: left;
+    width: 229px;
     height: 271px;
-    background-color: green;
-} */
+    background-color: #fff;
+    margin-right: 14px;
+}
+
+.me ul li img {
+    height: 157px;
+    width: 228px;
+}
+
+.me ul li div {
+    float: left;
+    padding: 25px;
+}
+
+.me ul li div p {
+    padding-top: 10px;
+    font-size: 12px;
+    color: #ff7c2d;
+}
+
+.me ul li div p span {
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.fe {
+    margin-top: 10px;
+    background-color: orange;
+}
+
+.fe .fe_title {
+    /* background-color: yellow; */
+    height: 60px;
+    text-align: center;
+}
+
+.fe .fe_title h2 {
+    float: left;
+    line-height: 60px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.fe .fe_title>a {
+    float: right;
+    margin-right: 30px;
+    line-height: 60px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #494949;
+}
+
+.fe .fe_title em a {
+    font-size: 16px;
+    line-height: 60px;
+    font-style: normal;
+    text-decoration: none;
+    color: #494949;
+    margin: 0px 35px;
+}
+
+.fe .fe_title em a:hover {
+    color: #00a4ff;
+}
 
 .footer {
     padding-top: 30px;
@@ -514,19 +690,3 @@ li {
     text-decoration: none;
     font-size: 14px;
 }
-
-
-/* .footer .about {
-    background-color: green;
-    width: 220px;
-}
-
-.footer .guide {
-    background-color: yellow;
-    width: 220px;
-}
-
-.footer .partner {
-    background-color: lightblue;
-    width: 220px;
-} */
