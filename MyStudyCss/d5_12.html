@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=a, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 粘性定位 */
+        /* 相当于相对定位和绝对定位的总和（请用场景比较少，因为兼容性很差） */
+        /* 目前网络上常用的类似效果并不是使用粘性定位做的 */
+        /* 粘性定位是不脱标的，依然占有原始的位置 */
+        
+        body {
+            height: 3000px;
+        }
+        
+        .blank {
+            height: 500px;
+            width: 1000px;
+            margin: 0px auto;
+            background-color: lightgreen;
+        }
+        
+        .w {
+            position: sticky;
+            /* 当盒子移动到符合top: 0px条件时，停止移动 */
+            top: 0px;
+            height: 80px;
+            width: 800px;
+            margin: 0px auto;
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="blank">
+        Blank area.
+    </div>
+    <div class="w">
+        Sticky Position.
+    </div>
+</body>
+
+</html>
