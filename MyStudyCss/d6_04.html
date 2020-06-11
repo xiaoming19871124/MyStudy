@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 注意，图片左移和上移的坐标数都是负值 */
+        /* .sprits {
+            width: 236px;
+            height: 128px;
+            margin: 100px auto;
+            background: url("img/sprits_buttons.png") -10px -269px;
+        } */
+        /* 从字母表中切出simon名字 */
+        
+        .name {
+            width: 550px;
+            height: 128px;
+            margin: 10px auto;
+            border: orange solid 1px;
+        }
+        
+        .name_s {
+            float: left;
+            width: 110px;
+            height: 128px;
+            background: url("img/sprits_alphabet.png") -255px -410px;
+            /* background-position: -255px -410px; */
+        }
+        
+        .name_i {
+            float: left;
+            width: 66px;
+            height: 128px;
+            background: url("img/sprits_alphabet.png") -320px -130px;
+        }
+        
+        .name_m {
+            float: left;
+            width: 145px;
+            height: 128px;
+            background: url("img/sprits_alphabet.png") -100px -265px;
+        }
+        
+        .name_o {
+            float: left;
+            width: 110px;
+            height: 128px;
+            background: url("img/sprits_alphabet.png") -368px -270px;
+        }
+        
+        .name_n {
+            float: left;
+            width: 118px;
+            height: 128px;
+            background: url("img/sprits_alphabet.png") -248px -267px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="sprits"></div> -->
+    <div class="name">
+        <div class="name_s"></div>
+        <div class="name_i"></div>
+        <div class="name_m"></div>
+        <div class="name_o"></div>
+        <div class="name_n"></div>
+    </div>
+</body>
+
+</html>
