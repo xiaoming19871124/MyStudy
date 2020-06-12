@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .page-buttons {
+            /* background-color: lightgreen; */
+            text-align: center;
+        }
+        
+        .page-buttons a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            line-height: 36px;
+            width: 36px;
+            height: 36px;
+            background-color: #f7f7f7;
+            border: 1px #ccc solid;
+        }
+        
+        .page-buttons .prev,
+        .page-buttons .next {
+            width: 90px;
+        }
+        
+        .page-buttons .current,
+        .page-buttons .elp {
+            border: 1px solid transparent;
+            background-color: transparent;
+        }
+        
+        .page-buttons input {
+            width: 60px;
+            height: 36px;
+            border: 1px #ccc solid;
+            outline: none;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-buttons">
+        <a class="prev" href="#">&lt;&lt;上一页</a>
+        <a href="#">1</a>
+        <a class="current" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a class="elp" href="#">...</a>
+        <a class="next" href="#">下一页&gt;&gt;</a> 共10页 到第 <input class="index" type="text"> 页 <input class="sure" type="button" value="确定">
+    </div>
+</body>
+
+</html>

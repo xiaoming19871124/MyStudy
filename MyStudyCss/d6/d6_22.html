@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /* 个人练习 */
+        
+        .box {
+            width: 250px;
+            height: 50px;
+            background-color: orange;
+            margin: 100px auto;
+        }
+        
+        .left,
+        .right {
+            float: left;
+            width: 125px;
+            height: 50px;
+            background-color: lightgreen;
+        }
+        
+        .left {
+            background-color: lightseagreen;
+        }
+        
+        .triangle {
+            /* 制作直角三角形 */
+            width: 0;
+            height: 0;
+            border-top: 0px solid lightblue;
+            border-right: 25px solid lightgreen;
+            border-bottom: 50px solid lightseagreen;
+            border-left: 0px solid lightcoral;
+        }
+        /* 案例练习 */
+        
+        .product-tag {
+            width: 300px;
+            height: 50px;
+            margin: 0px auto;
+            border: 1px red solid;
+            line-height: 50px;
+        }
+        
+        .product-tag span {
+            font-size: 22px;
+            height: 100%;
+            text-align: center;
+        }
+        
+        .product-tag .current {
+            position: relative;
+            float: left;
+            width: 70%;
+            font-weight: 700;
+            color: orange;
+            background-color: red;
+            margin-right: 10px;
+        }
+        
+        .product-tag .origin {
+            text-decoration: line-through;
+            color: gray;
+            font-size: 16px;
+        }
+        
+        .product-tag .current i {
+            position: absolute;
+            right: 0px;
+            width: 0px;
+            height: 0px;
+            border-bottom: 50px solid white;
+            border-left: 25px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="left"></div>
+        <div class="right">
+            <div class="triangle"></div>
+        </div>
+    </div>
+
+    <div class="product-tag">
+        <span class="current">￥1999
+            <i></i>
+        </span>
+        <span class="origin">￥2580</span>
+    </div>
+
+</body>
+
+</html>
