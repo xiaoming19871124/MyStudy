@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <iframe src="file:///D:/Engineering/repository_mine/MyStudy/MyStudyCss/html_test/inside.html" frameborder="0" width="100%" height="100%"></iframe> -->
+    <iframe src="http://www.baidu.com" id="external-frame" width="100%" height="100" scrolling="no" frameborder="0">abc</iframe>
+    <script>
+        // function setIframeHeight(iframe) {
+        //     if (iframe) {
+        //         console.log(iframe);
+        //         var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+        //         if (iframeWin.document.body) {
+        //             iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+        //         }
+        //     }
+        // };
+        // window.onload = function() {
+        //     setIframeHeight(document.getElementById('external-frame'));
+        // };
+
+        var iframe = document.getElementById("external-frame");
+        console.log(iframe.height);
+        iframe.height = window.screen.height - 100;
+
+
+        // console.log(window.screen.height);
+        // console.log(iframe.height);
+    </script>
+
+
+</body>
+
+</html>
