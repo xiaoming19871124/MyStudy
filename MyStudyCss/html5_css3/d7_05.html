@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 通过设置伪元素，修改元素属性样式 */
+        /* 该种选择器方式，后续会讲解 */
+        
+        .ph::placeholder {
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="#">
+        <!-- 
+            required="required" 设置是否必须输入
+            placeholder="请输入网址" 设置为空时的灰色提示信息
+            autofocus="autofocus" 自动获取焦点，类似百度打开后，光标自动定位到搜索栏
+            autocomplete="off" 设置是否自动记录输入历史，默认是 on 开启的，信息敏感时需要关闭 off
+
+            multiple="multiple" 设置上传文件时，是否可以多选，默认只能单选
+
+            注意：H5提供的自动校验元素必须包含在表单域中
+         -->
+        <ul>
+            <li>邮箱：<input type="email" name="" id=""> </li>
+            <li>网址：<input class="ph" type="url" name="" id="" placeholder="请输入网址"></li>
+            <li>日期：<input type="date" name="" id=""></li>
+            <li>时间：<input type="time" name="" id=""></li>
+            <li>日期时间：<input type="datetime-local" name="" id=""></li>
+            <li>数量：<input type="number" name="" id=""></li>
+            <li>搜索：<input type="search" name="" id="" autocomplete="off"></li>
+            <!-- <li>颜色：<input type="color" name="" id=""></li> -->
+            <li><input type="file" multiple="multiple" name="" id=""></li>
+            <li><input type="submit" value="提交"></li>
+        </ul>
+    </form>
+
+
+</body>
+
+</html>

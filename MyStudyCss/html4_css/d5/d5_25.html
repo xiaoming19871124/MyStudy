@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+          显示及隐藏元素（display: none 使用情况会更多）：
+          1、display（脱标）: none / block
+          2、visibility（不脱标）: hidden / visible
+          3、overflow: 
+              hidden 隐藏溢出盒子的部分（注意：并不是全部隐藏）
+              scroll 为盒子添加滚动条，可以滚动显示内容，无论内容是否超出盒子范围
+              auto 根据适当情况显示滚动条，为超出盒子则不显示滚动条
+        */
+        
+        .article {
+            overflow: hidden;
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            width: 100px;
+            height: 100px;
+            border: 1px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="article">
+        asdfsadfsadahsdf ahsdfhsaf'ashdfkjhdsafk asdfsadfsadahsdfsadf asdfsadfsadahsdfsadf sadfsadfsadfsadf sadfsadfsadfsadf
+    </div>
+
+</body>
+
+</html>

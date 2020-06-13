@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            margin: 100px 500px;
+            width: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        视频标签：
+        autoplay="autoplay" 设置是否自动播放（注：Chrome考虑到流量问题仍不会自动播放，需要额外添加 muted="muted" 属性）
+        muted="muted" 是否静音
+        controls="true" 显示播放UI
+        loop="true" 循环播放
+        poster="../media/video-cover.jpg" 设置加载等待时的封面图片，如果不是autoplay则也会显示出这张图片
+
+        Tips: 视频文件最好使用 MP4，可以兼容大部分浏览器
+    -->
+    <!-- <video src="../media/video.mp4" autoplay="autoplay" muted="muted" controls="true" loop="true" poster="../media/video-cover.jpg"></video> -->
+
+    <!-- 
+        音频标签：
+        autoplay="autoplay" 设置是否自动播放（注：Chrome考虑到流量问题仍不会自动播放，需要未来通过JS实现）
+        controls="true" 显示播放UI
+
+        Tips: 其他属性同上，音频文件最好使用 MP3，可以兼容大部分浏览器
+     -->
+    <audio src="../media/forever.mp3" autoplay="autoplay" controls="controls" loop="true"></audio>
+</body>
+
+</html>

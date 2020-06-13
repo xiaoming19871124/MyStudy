@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-single {
+            background-color: lightblue;
+            width: 100px;
+            height: 100px;
+            /* 设置文字超出盒子宽度时，自动换行（默认） */
+            /* white-space: normal; */
+            /* 设置文字超出盒子宽度时，不自动换行 */
+            white-space: nowrap;
+            /* 设置超出盒子的文字自动切掉 */
+            overflow: hidden;
+            /* 设置文字显示不下时，以省略号代替 */
+            text-overflow: ellipsis;
+        }
+        
+        .box-multi {
+            background-color: lightgreen;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 设置多行等略号的模式，存在一定兼容性的问题，仅做了解 */
+            /* 弹性伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 限制在一个块元素显示的文本的行数 */
+            -webkit-line-clamp: 2;
+            /* 设置或检索伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-single">
+        这是一条单行测试文本信息，用来测试文字溢出时的省略号功能！
+    </div>
+    <div class="box-multi">
+        这是一条多行测试文本信息，用来测试文字溢出时的省略号功能！
+    </div>
+</body>
+
+</html>

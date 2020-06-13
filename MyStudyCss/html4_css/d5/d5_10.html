@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+        
+        .guide {
+            /* 
+            固定位置会脱标，不会占用浏览器具体流布局空间；
+            固定位置按照浏览器的可视空间大小作为布局依据；
+            */
+            position: fixed;
+            top: 100px;
+            right: 50px;
+            width: 150px;
+            height: 50px;
+            background-image: url("img/tag_blue.png");
+        }
+        
+        .guide:hover {
+            background-image: url("img/tag_green.png");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guide">
+        <!-- <img src="img/tag_blue.png" alt=""> -->
+    </div>
+</body>
+
+</html>

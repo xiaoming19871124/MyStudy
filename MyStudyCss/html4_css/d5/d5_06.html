@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 500px;
+            height: 500px;
+            border: 1px solid gray;
+            position: absolute;
+        }
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid orange;
+            /* 注：绝对定位会以最近一级带有定位属性的父级元素作为依据 */
+            /* 即如果parent没有position，但grandparent有position，则以grandparent元素为准 */
+            /* 子绝父相：子元素用绝对定位，父容器用相对定位（该方式经常使用，但不代表所有场景都一定使用） */
+            position: absolute;
+            left: 10px;
+            bottom: 20px;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

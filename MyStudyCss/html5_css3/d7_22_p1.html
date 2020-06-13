@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 京东商品项案例 */
+        
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        img {
+            vertical-align: bottom;
+        }
+        
+        body {
+            background-color: lightgrey;
+        }
+        
+        .item-box {
+            margin: 100px auto;
+            width: 220px;
+            height: 380px;
+            background-color: #fff;
+        }
+        
+        .item-box>img {
+            width: 100%;
+            height: 220px;
+            vertical-align: bottom;
+        }
+        
+        .item-box .item-body {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            /* background-color: lightgreen; */
+        }
+        
+        .item-box .item-body h3 {
+            font-size: 12px;
+            font-weight: 400;
+            color: gray;
+            margin-bottom: 10px;
+        }
+        
+        .item-box .item-body .price {
+            color: red;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .item-box .item-body .price span {
+            color: gray;
+            font-weight: 700;
+            font-size: 12px;
+            text-decoration: line-through;
+        }
+        
+        .item-box .item-body .seckill {
+            height: 15px;
+            /* background-color: pink; */
+            font-size: 10px;
+            line-height: 15px;
+        }
+        
+        .item-box .item-body .seckill .progress-bar {
+            display: inline-block;
+            border: red 1px solid;
+            height: 100%;
+            width: 90px;
+            vertical-align: top;
+            border-radius: 10px;
+        }
+        
+        .item-box .item-body .seckill .progress-bar p {
+            margin: 1px 1px;
+            height: calc(100% - 2px);
+            width: calc(87% - 1px);
+            background-color: red;
+            border-radius: 10px;
+        }
+        
+        .item-box .item-body .seckill .progress-bar:hover p {
+            background-color: orange;
+        }
+        
+        .item-box .item-body .seckill span {
+            color: red;
+        }
+        
+        .item-box .purchase {
+            display: inline-block;
+            width: 100%;
+            height: 40px;
+            background-color: red;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            color: white;
+        }
+        
+        .item-box .purchase:hover {
+            background-color: orange
+        }
+    </style>
+</head>
+
+<body>
+    <div class="item-box">
+        <img src="../img/product.jpg" alt="">
+        <div class="item-body">
+            <h3>Apple iPhone 11 Pro Max (A2220) 256GB</h3>
+            <p class="price">
+                ￥9999.00
+                <span>￥10899.00</span>
+            </p>
+            <div class="seckill">
+                已售<span>87%</span>
+                <div class="progress-bar">
+                    <p></p>
+                </div>
+                剩余<span>29</span>件
+            </div>
+        </div>
+        <a href="#" class="purchase">立即抢购</a>
+    </div>
+</body>
+
+</html>

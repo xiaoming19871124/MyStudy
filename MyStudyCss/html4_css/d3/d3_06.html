@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 权重的叠加：
+        li      = 0,0,0,1
+        ul li   = 0,0,0,1 + 0,0,0,1 = 0,0,0,2
+        .nav li = 0,0,1,0 + 0,0,0,1 = 0,0,1,1
+        */
+        
+        li {
+            color: orange;
+        }
+        
+        ul li {
+            color: peru;
+        }
+        
+        .nav li {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li>U1</li>
+        <li>U2</li>
+        <li>U3</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            属性选择器：
+            选择只包含特定属性的元素，使用[]中括号
+        */
+        
+        input[placeholder] {
+            color: greenyellow;
+        }
+        /* 重点：根据特定属性的特定值来选择元素 */
+        
+        input[type="password"] {
+            color: orange;
+        }
+        /* 选择class属性以 [icon开头的] div元素 */
+        
+        div[class^="icon"] {
+            color: red;
+        }
+        /* 选择class属性以 [data结尾的] div元素 */
+        
+        div[class$="data"] {
+            color: blue;
+        }
+        /* 选择class属性 [包含msg字符串的] div元素 */
+        
+        div[class*="msg"] {
+            color: lightblue
+        }
+        /* 注意：类选择器、属性选择器、伪类选择器 的权重都是10 */
+    </style>
+</head>
+
+<body>
+    <input type="text" name="" id="" placeholder="请输入用户名">
+    <input type="password" name="" id="">
+    <input type="text" name="" id="">
+
+    <div class="icon1">i1</div>
+    <div class="icon2_data">i2</div>
+    <div class="icon3_data">i3</div>
+    <div class="icon4">i4</div>
+    <div class="nav_msg_p1">msg_p1</div>
+    <div class="nav_age_p1">age_p1</div>
+    <div class="nav_msg_p2">msg_p2</div>
+    <div class="nav_add_p2">add_p2</div>
+
+</body>
+
+</html>

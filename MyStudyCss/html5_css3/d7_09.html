@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            伪类选择器
+        */
+        /* 选择UL里的第一个li */
+        
+        ul li:first-child {
+            background-color: pink;
+        }
+        /* 选择UL里的最后一个li */
+        
+        ul li:last-child {
+            background-color: lightblue;
+        }
+        /* 选择UL里的第5个li（即第5个元素，并且是li才会被匹配，并不是只找li元素） */
+        
+        ul li:nth-child(5) {
+            background-color: red;
+        }
+        /* 选择UL里的所有偶数li */
+        
+        ul li:nth-child(even) {
+            background-color: orange;
+        }
+        /* 选择UL里的所有奇数li */
+        
+        ul li:nth-child(odd) {
+            color: lightgreen;
+        }
+        /* n从0开始循环选择所有 */
+        /* ol li:nth-child(n) {
+            background-color: pink;
+        } */
+        /* 
+            n从0开始表达式循环选择所有(2n:偶数，2n+1:奇数)： 
+            v = 2 * n
+            ---------
+            0 = 2 * 0
+            2 = 2 * 1
+            4 = 2 * 2
+            6 = 2 * 3
+            8 = 2 * 4
+           10 = 2 * 5
+        */
+        
+        ol li:nth-child(2n) {
+            background-color: pink;
+        }
+        
+        ol li:nth-child(-n+3) {
+            background-color: lightgreen;
+        }
+        /* 
+            公式示例：
+            2n      偶数
+            2n+1    奇数
+            5n      5、10、15、...
+            n+5     从第5个开始（含第5个）到最后
+            -n+5    前5个（包含第5个）
+        */
+        /* 
+            寻找第一个元素，并且是div才会匹配；
+            因为第一个是P元素，所以不会匹配到
+        */
+        
+        section div:nth-child(1) {
+            color: orange;
+        }
+        /*
+            first-of-type、last-of-type、nth-of-type：会把指定的元素的盒子排列序号，其他类型的元素不会排进来
+            div:nth-of-type(1)：只在div类型的元素中找索引; 因为第一个是P元素，所以不会包含到索引中
+        */
+        
+        section div:nth-of-type(1) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+        <li>我是第9个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+        <li>我是第9个孩子</li>
+    </ol>
+
+    <section>
+        <p>p1</p>
+        <div>div1</div>
+        <div>div2</div>
+    </section>
+</body>
+
+</html>
